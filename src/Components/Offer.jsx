@@ -1,6 +1,6 @@
 import React from 'react'
 import Enq from "../assets/Enq.png"
-import Deg from "../assets/Deg.png"
+import Veg from "../assets/Veg.png"
 import Printer from "../assets/Printer.png"
 import Project from "../assets/Project.png"
 import Customer from "../assets/Customer.png"
@@ -9,7 +9,7 @@ const Offer = () => {
   const OfferArray = [
     {OfferImg:Printer , OfferTitle:"Printing services", offerText:"At Aphamed, we bring your ideas to life with top-tier printing solutions. Whether it's marketing materials, packaging, or large-format prints, we guarantee premium quality, sharp details, and vibrant colors. Trust us to make your brand unforgettable!Get in touch today!"
      },
-    {OfferImg:Deg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo—it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience. From logo design and color palettes to complete brand guidelines, we create cohesive and impactful visuals that set you apart."
+    {OfferImg:Veg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo—it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience. From logo design and color palettes to complete brand guidelines, we create cohesive and impactful visuals that set you apart."
      },
     {OfferImg:Project , OfferTitle:"Project analysis", offerText:"Successful projects start with a solid foundation. At Aphamed, we provide in-depth project analysis to identify opportunities, assess risks, and create strategic roadmaps for success. Our expert team evaluates every aspect of your project, ensuring efficiency, feasibility, and optimal results."
      },
