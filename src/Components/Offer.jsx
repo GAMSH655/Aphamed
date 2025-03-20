@@ -28,7 +28,7 @@ const Offer = () => {
           OfferArray.map(({OfferImg , OfferTitle , offerText}, index )=>{
             return <div className="shadow-md rounded-md m-5 p-3">
                 <div className="flex justify-center items-center">
-                   <img src={OfferImg} alt="" className='size-[50px]' />
+                   <img src={OfferImg} alt="" className='size-[50px]' draggable="false"/>
                 </div>
                 <h3 className="text-lg font-semibold  capitalize text-center">{OfferTitle}</h3>
                 <p className="font-normal p-2 ">{offerText}</p>

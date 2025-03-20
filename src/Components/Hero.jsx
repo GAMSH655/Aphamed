@@ -60,7 +60,7 @@ const Hero = () => {
                     ))}
                 </div>
          </div>
-         <img src={Printing} alt="" className='  md:size-[500px]' />
+         <img src={Printing} alt="" className='  md:size-[500px]'  draggable="false" />
     </div>
   )
 }
