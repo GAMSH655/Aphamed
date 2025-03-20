@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <div className="sticky top-0 w-full bg-white shadow-md z-50  " id="home">
             <div className="flex justify-between text-black p-4">
-                <h3 className="font-bold text-5xl uppercase log">aphamed</h3>
+                <h3 className="font-bold text-2xl md:text-5xl uppercase log">aphamed</h3>
                 <div className="hidden md:flex space-x-4">
                     {NavLinks.map(({ path, pathName }, index) => (
                         <a

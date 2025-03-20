@@ -41,24 +41,15 @@ const Hero = () => {
      },[])
   return (
     <div 
-    className='flex justify-evenly m-5  shadow-lg p-6'
-    data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center"
-     > 
+    className=' block md:flex md:justify-evenly m-5 '> 
          <div className="p-5 mt-[10px] md:mt-[100px]">
-         <h3 className="text-center md:text-left text-4xl font-bold m-5  text-[#FF6B6B] capitalize">
+         <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold m-2 md:m-5  text-[#FF6B6B] capitalize">
              Welcome to aphamed
              </h3>
-         <h3 className="text-center md:text-left text-lg font-bold m-5 text-[#FF6B6B] capitalize">
+         <h3 className="text-center md:text-left text-lg font-bold md:m-5 text-[#FF6B6B] capitalize">
            Bringing Your Ideas to Life with High-Quality Printing!
            </h3>
-           <p  className=' break-words leading-loose text-black text-sm md:text-[16ox] font-semibold  m-5 mt-[10px] text-center md:text-left'>
+           <p  className=' md:break-words leading-loose text-black text-sm md:text-[16ox] font-semibold  md:m-5 mt-[10px] text-center md:text-left'>
            At Aphamed, we believe that every print tells a story. Whether you’re looking for business cards, brochures, banners, or custom packaging, we ensure precision, vibrant colors, and premium materials in every project. Our state-of-the-art printing technology guarantees sharp details and long-lasting prints that leave a lasting impression.
            </p>
            <div className="flex justify-center md:justify-start mt-[10px] m-5">
@@ -69,7 +60,7 @@ const Hero = () => {
                     ))}
                 </div>
          </div>
-         <img src={Printing} alt="" className='size-[500px]' />
+         <img src={Printing} alt="" className='  md:size-[500px]' />
     </div>
   )
 }
