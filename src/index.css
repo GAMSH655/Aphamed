@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.log {
+    background: linear-gradient(to right, #FF6B6B, #4ECDC4, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+.hero{
+    background-image: linear-gradient(#000000a7 , #000000ec) , url("../src/assets/P2.avif");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+  }
