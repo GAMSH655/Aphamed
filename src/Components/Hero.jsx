@@ -5,10 +5,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 const Hero = () => {
     const socialMediaLink = [
-        { socialLink: "https://www.linkedin.com/in/sheriff-adekoya-arpa-34084939/?originalSubdomain=ng", socialMediaName: "LinkedIn", socialMediaIcon: <FaLinkedin /> },
-        { socialLink: "https://x.com/sheriffadekoya?lang=bn", socialMediaName: "Twitter", socialMediaIcon: <FaTwitter /> },
+        { socialLink: "https://www.linkedin.com/in/aphamed-prints-b25a24328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", socialMediaName: "LinkedIn", socialMediaIcon: <FaLinkedin /> },
+        { socialLink: "https://x.com/certifiedomoal1?s=21", socialMediaName: "Twitter", socialMediaIcon: <FaTwitter /> },
         { socialLink: "https://x.com/sheriffadekoya?lang=bn", socialMediaName: "Facebook", socialMediaIcon: <FaFacebook /> },
-        { socialLink: "https://x.com/sheriffadekoya?lang=bn", socialMediaName: "Instagram", socialMediaIcon: <FaInstagram /> },
+        { socialLink: "https://www.instagram.com/aphamedprints/profilecard", socialMediaName: "Instagram", socialMediaIcon: <FaInstagram /> },
     ];
 
      useEffect(()=>{
