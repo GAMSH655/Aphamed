@@ -7,7 +7,7 @@ const Hero = () => {
     const socialMediaLink = [
         { socialLink: "https://www.linkedin.com/in/aphamed-prints-b25a24328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", socialMediaName: "LinkedIn", socialMediaIcon: <FaLinkedin /> },
         { socialLink: "https://x.com/certifiedomoal1?s=21", socialMediaName: "Twitter", socialMediaIcon: <FaTwitter /> },
-        { socialLink: "https://x.com/sheriffadekoya?lang=bn", socialMediaName: "Facebook", socialMediaIcon: <FaFacebook /> },
+        { socialLink: "https://www.facebook.com/share/1Bff6352XN/?mibextid=LQQJ4d", socialMediaName: "Facebook", socialMediaIcon: <FaFacebook /> },
         { socialLink: "https://www.instagram.com/aphamedprints/profilecard", socialMediaName: "Instagram", socialMediaIcon: <FaInstagram /> },
     ];
 
@@ -31,7 +31,7 @@ const Hero = () => {
           // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
           offset: 120, // offset (in px) from the original trigger point
           delay: 0, // values from 0 to 3000, with step 50ms
-          duration: 400, // values from 0 to 3000, with step 50ms
+          duration: 500, // values from 0 to 3000, with step 50ms
           easing: 'ease', // default easing for AOS animations
           once: false, // whether animation should happen only once - while scrolling down
           mirror:true, // whether elements should animate out while scrolling past them
@@ -41,12 +41,12 @@ const Hero = () => {
      },[])
   return (
     <div 
-    className=' block md:flex md:justify-evenly m-5 '> 
+    className=' block md:flex md:justify-evenly md:m-5  md:shadow-lg' data-aos="zoom-in"> 
          <div className="p-5 mt-[10px] md:mt-[100px]">
          <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold m-2 md:m-5  text-[#FF6B6B] capitalize">
              Welcome to aphamed
              </h3>
-         <h3 className="text-center md:text-left text-lg font-bold md:m-5 text-[#FF6B6B] capitalize">
+         <h3 className="text-center md:text-left text-[15px] md:text-lg  font-semibold md:font-bold md:m-5 text-[#FF6B6B] capitalize">
            Bringing Your Ideas to Life with High-Quality Printing!
            </h3>
            <p  className=' md:break-words leading-loose text-black text-sm md:text-[16ox] font-semibold  md:m-5 mt-[10px] text-center md:text-left'>
@@ -54,7 +54,7 @@ const Hero = () => {
            </p>
            <div className="flex justify-center md:justify-start mt-[10px] m-5">
                     {socialMediaLink.map(({ socialLink, socialMediaName, socialMediaIcon }, index) => (
-                        <a key={index} href={socialLink} className='text-black text-2xl font-semibold m-1 transition-all hover:text-[#704ff2cf] text-center md:text-left'>
+                        <a key={index} href={socialLink} className='text-black text-2xl font-semibold m-1 transition-all hover:text-[#FF6B6B] text-center md:text-left'>
                             {socialMediaIcon}
                         </a>
                     ))}
