@@ -15,7 +15,7 @@ const Offer = () => {
      },
     {OfferImg:Customer , OfferTitle:"customer feedback", offerText:"At Aphamed, we value every customer's experience and strive for continuous improvement. Your feedback helps us enhance our services, refine our solutions, and better meet your needs. Whether it’s a suggestion, a compliment, or a concern, we’re here to listen and grow with you."
      },
-    {OfferImg:Research , OfferTitle:"projct reserach", offerText:"Every great project begins with thorough research. At Aphamed, we conduct in-depth market analysis, competitor assessments, and feasibility studies to ensure your project is built on a strong foundation. Our research-driven approach helps you make informed decisions, minimize risks, and maximize success."
+    {OfferImg:Research , OfferTitle:"project reserach", offerText:"Every great project begins with thorough research. At Aphamed, we conduct in-depth market analysis, competitor assessments, and feasibility studies to ensure your project is built on a strong foundation. Our research-driven approach helps you make informed decisions, minimize risks, and maximize success."
      },
     {OfferImg:Enq , OfferTitle:"Printing enquiries", offerText:"Have questions about our printing services? At Aphamed, we’re here to assist you with custom printing solutions, pricing, materials, and design options. Whether you need business cards, brochures, banners, or packaging, we ensure top-quality prints tailored to your requirements."
      },
