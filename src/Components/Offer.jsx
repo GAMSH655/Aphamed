@@ -49,22 +49,22 @@ const Offer = () => {
    ]
   return (
     <div className='mt-[100px]'>
-      <h3 className="text-2xl capitalize text-center text-[#FF6B6B] font-bold"> what we offer</h3>
+      <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> what we offer</h3>
       <div className="block md:grid md:grid-cols-3">
         {
           OfferArray.map(({OfferImg , OfferTitle , offerText}, index )=>{
-            return <div className="shadow-md rounded-md m-5 p-3">
+            return <div className="shadow-md rounded-md m-5 p-3" key={index}>
                 <div className="flex justify-center items-center">
                    <img src={OfferImg} alt="" className='size-[50px]' draggable="false"/>
                 </div>
-                <h3 className="text-lg font-semibold  capitalize text-center font-merriweather-sans">{OfferTitle}</h3>
-                <p className="font-normal p-2 font-serif ">{offerText}</p>
+                <h3 className="text-lg font-semibold  capitalize text-center font-merriweather-sans text-colorPrimary">{OfferTitle}</h3>
+                <p className="font-normal p-2  font-merriweather-sans ">{offerText}</p>
             </div>
           })
         }
       </div>
-      <div className="mt-10">
-      <h3 className="text-4xl capitalize text-center text-[#FF6B6B] font-bold"> why choose us</h3>
+      <div className="mt-[100px]">
+      <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> why choose us</h3>
       <div className="block md:grid md:grid-cols-3">
       {
           sayArray.map(({sayImg , sayHeading , sayText}, index )=>{
@@ -72,8 +72,8 @@ const Offer = () => {
                 <div className="flex justify-center items-center">
                    <img src={sayImg} alt="" className='size-[50px]' draggable="false"/>
                 </div>
-                <h3 className="text-lg font-semibold  capitalize text-center font-merriweather-sans">{sayHeading}</h3>
-                <p className="font-normal p-2 font-serif ">{sayText}</p>
+                <h3 className="text-lg font-semibold  capitalize text-center font-merriweather-sans text-colorPrimary">{sayHeading}</h3>
+                <p className="font-normal p-2 font-merriweather-sans ">{sayText}</p>
             </div>
           })
         }

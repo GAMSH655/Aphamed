@@ -8,14 +8,13 @@ export default {
     extend: {
       fontFamily: {
         'merriweather-sans': ['Merriweather Sans', 'sans-serif'],
+        'serif': ['Roboto Slab', 'serif'],
+        'allura': ['Allura', 'cursive'], // Fixed space issue
       },
-      serif: ['Roboto Slab', 'serif'],
-      fontWeight: {
-        light: 300,
-        normal: 400,
-        bold: 700,
-      },
+      textColor:{
+        colorPrimary:'#FF6B6B'
+      }
     },
   },
   plugins: [],
-}
+};

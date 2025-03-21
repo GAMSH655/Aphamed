@@ -15,4 +15,29 @@
     background-position: center;
     background-size: contain;
     
+  }/* Apply box-sizing globally */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  gap: 16px; /* Ensure proper spacing between slides */
+}
+
+.embla__slide {
+  flex: 0 0 50%;
+  min-width: 0;
+}
+
+/* Corrected Media Query */
+@media only screen and (max-width: 658px) {
+  .embla__slide {
+    flex: 0 0 100%;
   }
+}
