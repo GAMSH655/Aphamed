@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaSun } from "react-icons/fa6";
+import Aphamd from "../assets/Aphamed.jpg"
 // import ToggleButton from "../Contexts/ToggleButton";
 // import { ThemeContext } from "../Contexts/ThemeContext"
 const Header = () => {
@@ -20,7 +21,8 @@ const Header = () => {
     return (
         <div className="sticky top-0 w-full bg-white shadow-md z-50  " id="home">
             <div className="flex justify-between text-black p-4">
-                <h3 className="font-bold text-2xl md:text-5xl uppercase log font-merriweather-sans">aphamed</h3>
+                {/* <h3 className="font-bold text-2xl md:text-5xl uppercase log font-merriweather-sans">aphamed</h3> */}
+                <img src={Aphamd} alt=""  className="size-[50px]"/>
                 <div className="hidden md:flex space-x-4">
                     {NavLinks.map(({ path, pathName }, index) => (
                         <a

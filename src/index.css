@@ -10,9 +10,9 @@
   
   
 .hero{
-    background-image: linear-gradient(#000000a7 , #000000ec) , url("../src/assets/P2.avif");
+    background-image: linear-gradient(#000000a7 , #000000ec) , url("../src/assets/Aphamed.jpg");
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
     
   }
