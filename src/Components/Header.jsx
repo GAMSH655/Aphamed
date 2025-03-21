@@ -29,7 +29,7 @@ const Header = () => {
                             key={index}
                             className={({ isActive }) =>
                                 `p-2 m-2 text-xl font-normal capitalize ${
-                                    isActive ? "text-blue-600 font-bold" : "text-black"
+                                    isActive ? "text-colorPrimary font-bold" : "text-black"
                                 }`
                             }
                         >
@@ -69,7 +69,7 @@ const Header = () => {
                             onClick={handleNav} // Close menu on click
                             className={({ isActive }) =>
                                 `p-2 m-2 text-xl font-normal capitalize block text-center ${
-                                    isActive ? "text-blue-600 font-bold" : "text-black"
+                                    isActive ? "text-colorPrimary font-bold" : "text-black"
                                 }`
                             }
                         >

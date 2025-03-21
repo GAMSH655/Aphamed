@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Company Info */}
         <div>
-          <h2 className="text-xl font-bold text-white">Aphamed Printing</h2>
+          <h2 className="text-xl font-bold text-white">Aphamed Prints</h2>
           <p className="mt-2 text-gray-400">
             Delivering high-quality printing solutions with precision and excellence.
           </p>

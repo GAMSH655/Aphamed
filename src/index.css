@@ -15,7 +15,16 @@
     background-position: center;
     background-size: contain;
     
-  }/* Apply box-sizing globally */
+  }
+  .about {
+    background-image: linear-gradient(to left, #ff6b6bca, #0b0202d6), 
+                      url("../src//assets/Stc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+  /* Apply box-sizing globally */
 *, *::before, *::after {
   box-sizing: border-box;
 }
