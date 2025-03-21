@@ -38,21 +38,21 @@ const Feedbacks = () => {
         id: 5,
         name: "AHMED SHAKIRAT OLAITAN",
         rating: 3.5,
-        review: "My experience with Aphamed Printns was decent. The prints were good, but I expected slightly better resolution for the price I paid. Customer service was helpful, though, and they addressed my concerns quickly. I might give them another chance for a smaller order to see if the quality improves.",
+        review: "My experience with Aphamed Prints was decent. The prints were good, but I expected slightly better resolution for the price I paid. Customer service was helpful, though, and they addressed my concerns quickly. I might give them another chance for a smaller order to see if the quality improves.",
         date: "2024-02-28",
       },
       {
         id: 6,
         name: "JAJA STELLA",
         rating: 5,
-        review: "Fantastic work by Aphamed Printins I ordered custom wedding invitations, and they turned out absolutely beautiful. The attention to detail and the elegant finish made them stand out. The team was also great in providing design advice and making sure everything was perfect before printing. Couldn’t be happier!",
+        review: "Fantastic work by Aphamed Prints I ordered custom wedding invitations, and they turned out absolutely beautiful. The attention to detail and the elegant finish made them stand out. The team was also great in providing design advice and making sure everything was perfect before printing. Couldn’t be happier!",
         date: "2025-03- 15",
       },
       {
         id: 7,
         name: "JEHU ASELA",
         rating: 4,
-        review: "The print quality from Aphamed Printins was fantastic! My business cards came out looking sleek and professional. However, I feel like the pricing could be slightly more competitive. Other than that, it was a great experience, and I will likely order again in the future.",
+        review: "The print quality from Aphamed Prints was fantastic! My business cards came out looking sleek and professional. However, I feel like the pricing could be slightly more competitive. Other than that, it was a great experience, and I will likely order again in the future.",
         date: "2024-02-22",
       },
       {
@@ -82,7 +82,7 @@ const Feedbacks = () => {
   <div className="mt-[30px] md:mt-[100px]">
       <h2 className="text-3xl font-bold text-colorPrimary text-center m-3">Hear What Our Customers Say!</h2>
   <p className="mt-2 text-lg text-gray-600 text-center">
-    At <span className="font-semibold text-blue-600">Aphamed Prints~</span>, we take pride in delivering high-quality prints with exceptional service. But don’t just take our word for it—see what our valued customers have to say about their experience with us!
+    At <span className="font-semibold text-blue-600">Aphamed Prints</span>, we take pride in delivering high-quality prints with exceptional service. But don’t just take our word for it—see what our valued customers have to say about their experience with us!
   </p>
       <div className="embla  p-6 rounded-lg" ref={emblaRef}>
       <div className="embla__container flex gap-4">
