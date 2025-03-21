@@ -43,13 +43,13 @@ const Hero = () => {
     <div 
     className=' block md:flex md:justify-evenly md:m-5  md:shadow-lg' data-aos="zoom-in"> 
          <div className="p-5 mt-[10px] md:mt-[100px]">
-         <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold m-2 md:m-5  text-[#FF6B6B] capitalize">
+         <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold m-2 md:m-5  text-[#FF6B6B] capitalize font-merriweather-sans">
              Welcome to aphamed
              </h3>
-         <h3 className="text-center md:text-left text-[15px] md:text-lg  font-semibold md:font-bold md:m-5 text-[#FF6B6B] capitalize">
+         <h3 className="text-center md:text-left text-[15px] md:text-lg  font-semibold md:font-bold md:m-5 text-[#FF6B6B] capitalize font-merriweather-sans">
            Bringing Your Ideas to Life with High-Quality Printing!
            </h3>
-           <p  className=' md:break-words leading-loose text-black text-sm md:text-[16ox] font-semibold  md:m-5 mt-[10px] text-center md:text-left'>
+           <p  className=' md:break-words leading-loose text-black text-sm md:text-[16ox] font-semibold  md:m-5 mt-[10px] text-center md:text-left font-serif'>
            At Aphamed, we believe that every print tells a story. Whether you’re looking for business cards, brochures, banners, or custom packaging, we ensure precision, vibrant colors, and premium materials in every project. Our state-of-the-art printing technology guarantees sharp details and long-lasting prints that leave a lasting impression.
            </p>
            <div className="flex justify-center md:justify-start mt-[10px] m-5">

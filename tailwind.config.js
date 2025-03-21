@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'merriweather-sans': ['Merriweather Sans', 'sans-serif'],
+      },
+      serif: ['Roboto Slab', 'serif'],
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        bold: 700,
+      },
+    },
   },
   plugins: [],
 }
