@@ -6,17 +6,19 @@ import useLenis from './Others/useLenis'
 import Scroll from './Components/Sroll'
 import Faqs from  "../src/Components/Faqs"
 import Feedback from "../src/Components/Feedbacks"
+import Footer from "../src/Components/Footer"
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
 const App = () => {
   useLenis()
   return (
-    <div>
+    <div className="max-w-[1200px] m-auto">
       <Scroll/>
       <Header/>
       <Hero/>
       <Offer/>
       <Faqs/>
       <Feedback/>
+      <Footer/>
     </div>
   )
 }

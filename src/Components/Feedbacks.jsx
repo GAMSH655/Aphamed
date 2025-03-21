@@ -79,7 +79,7 @@ const Feedbacks = () => {
   ];
 
   return (
-  <div className="mt-[100px]">
+  <div className="mt-[30px] md:mt-[100px]">
       <h2 className="text-3xl font-bold text-colorPrimary text-center m-3">Hear What Our Customers Say!</h2>
   <p className="mt-2 text-lg text-gray-600 text-center">
     At <span className="font-semibold text-blue-600">Aphamed Printing</span>, we take pride in delivering high-quality prints with exceptional service. But don’t just take our word for it—see what our valued customers have to say about their experience with us!
