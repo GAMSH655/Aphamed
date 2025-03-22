@@ -8,28 +8,28 @@ const Feedbacks = () => {
   const reviews = [
     {
         id: 1,
-        name: "John Doe",
+        name: "Olasumbo Salami FB",
         rating: 5,
         review: "Aphamed Prints exceeded my expectations! The print quality was outstanding, and the colors were vibrant and true to the design. The customer support team was incredibly helpful and ensured that my order was processed smoothly. Delivery was quick, and everything arrived in perfect condition. I will definitely be using their services again!",
         date: "2024-03-10",
       },
       {
         id: 2,
-        name: "Emily Smith",
+        name: "abdulquadri shittu",
         rating: 4,
         review: "Great service from Aphamed Prints! The materials used for printing were high quality, and the final result looked fantastic. My only issue was that my order took a day longer than expected to arrive, but other than that, I was very happy with the experience. Would recommend to anyone looking for professional printing services.",
         date: "2024-03-08",
       },
       {
         id: 3,
-        name: "Michael Johnson",
+        name: "Azeez Oladipo INKSNAP",
         rating: 5,
         review: "Aphamed Prints is by far the best printing company I’ve worked with! The team was professional, the communication was excellent, and the end product was flawless. I placed a large order for business brochures, and they turned out even better than I had imagined. Thank you for your dedication to quality and customer satisfaction!",
         date: "2024-03-05",
       },
       {
         id: 4,
-        name: "Sarah Williams",
+        name: "Ahmed R.A",
         rating: 4.5,
         review: "I ordered customized posters from Aphamed Printns, and they were amazing! The colors were sharp, the paper quality was premium, and the details were crisp. The only slight downside was that the packaging could have been a bit sturdier, but my prints arrived safely, so it wasn’t a big issue. Overall, I highly recommend them!",
         date: "2024-03-02",
@@ -43,7 +43,7 @@ const Feedbacks = () => {
       },
       {
         id: 6,
-        name: "JAJA STELLA",
+        name: " AMAKHABI SARAH AMIE",
         rating: 5,
         review: "Fantastic work by Aphamed Prints I ordered custom wedding invitations, and they turned out absolutely beautiful. The attention to detail and the elegant finish made them stand out. The team was also great in providing design advice and making sure everything was perfect before printing. Couldn’t be happier!",
         date: "2025-03- 15",
@@ -64,7 +64,7 @@ const Feedbacks = () => {
       },
       {
         id: 9,
-        name: "William Harris",
+        name: "Mayomi williams ",
         rating: 4.5,
         review: "Very pleased with my experience at Aphamed Prints. I ordered customized greeting cards, and they were exactly as I envisioned. The paper felt luxurious, and the colors were rich and vibrant. The only reason I’m not giving 5 stars is that I had to reach out for an order update, but otherwise, everything was perfect!",
         date: "2024-02-14",
@@ -88,9 +88,9 @@ const Feedbacks = () => {
       <div className="embla__container flex gap-4">
         {reviews.map((review) => (
           <div key={review.id} className="embla__slide bg-white p-4 rounded-lg shadow-md w-80">
-            <h3 className="text-lg font-semibold font-merriweather-sans">{review.name}</h3>
-            <p className="text-sm text-gray-600">{review.date}</p>
-            <p className="mt-2 text-gray-800 font-serif">{review.review}</p>
+            <h3 className="text-lg font-semibold font-merriweather-sans uppercase">{review.name}</h3>
+            <p className="text-sm text-gray-600 font-merriweather-sans">{review.date}</p>
+            <p className="mt-2 text-gray-800 font-merriweather-sans">{review.review}</p>
           </div>
         ))}
       </div>
