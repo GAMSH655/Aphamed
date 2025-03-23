@@ -43,7 +43,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} Aphamed Printing. All Rights Reserved.
+        © {new Date().getFullYear()} Gtech. All Rights Reserved.
       </div>
     </footer>
   );

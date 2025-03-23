@@ -41,7 +41,7 @@ const Services = () => {
       </div>
 
       {/* Tab Section */}
-      <Box sx={{ maxWidth: { lg: 1500, xs: 320, sm: 480 }, bgcolor: "background.paper", p: 2 }}>
+      <Box sx={{ maxWidth: { lg: 1500, }, bgcolor: "background.paper", p: 2 }}>
         <TabContext value={value}>
           <Box>
             <Tabs
