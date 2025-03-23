@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
 import TabContext from "@mui/lab/TabContext";
-
+import Cards from "../Components/Tabs/Cards"
 const Services = () => {
   const [value, setValue] = React.useState(0);
 
@@ -16,7 +16,7 @@ const Services = () => {
   return (
     <div className="p-5">
       {/* Intro Section */}
-      <div className="flex flex-col md:flex-row items-center gap-6 p-5 shadow-lg rounded-lg m-5">
+      <div className="flex flex-col md:flex-row items-center gap-6 md:p-5 shadow-lg rounded-lg md:m-5">
         <div className="flex-1">
           <h1 className="text-3xl font-bold mb-4">Welcome to Ahpamed Prints</h1>
           <p className="text-lg text-gray-700">
@@ -52,7 +52,7 @@ const Services = () => {
               allowScrollButtonsMobile
               aria-label="scrollable force tabs example"
             >
-              <Tab label="Item One" value={0} />
+              <Tab label="Business cards" value={0} />
               <Tab label="Item Two" value={1} />
               <Tab label="Item Three" value={2} />
               <Tab label="Item Four" value={3} />
@@ -63,7 +63,9 @@ const Services = () => {
           </Box>
 
           {/* Tab Panels */}
-          <TabPanel value={0}>Item One</TabPanel>
+          <TabPanel value={0}>
+           <Cards/>
+          </TabPanel>
           <TabPanel value={1}>Item Two</TabPanel>
           <TabPanel value={2}>Item Three</TabPanel>
           <TabPanel value={3}>Item Four</TabPanel>
