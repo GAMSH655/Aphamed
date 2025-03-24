@@ -24,19 +24,24 @@ const Cards = () => {
     },
   ]
   return (
-    <div>
-       <div className="block md:grid md:grid-cols-3 gap-5">
-             {
-              cardArray.map(({cardImg , CardTitle , cardContent}, index)=>{ 
-                 return <div className="shadow-lg rounded-md  p-2 w-full m-[20px]:" key={index}>
-                  <img src={cardImg} alt="" className='size-[200px] object-cover w-full  rounded-tl-md rounded-tr-md'/>
-                   <h3 className="text-colorPrimary font-merriweather-sans text-lg font-bold">{CardTitle}</h3>
-                    <p className="font-merriweather-sans text-sm">{cardContent}</p>
-                </div>
-              })
-             }
-       </div>
+    <div className="w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      {cardArray.map(({ cardImg, CardTitle, cardContent }, index) => (
+        <div className="shadow-lg rounded-md p-4 w-full" key={index}>
+          <img
+            src={cardImg}
+            alt=""
+            className="w-full h-[200px] object-cover rounded-t-md"
+          />
+          <h3 className="text-colorPrimary font-merriweather-sans text-lg font-bold">
+            {CardTitle}
+          </h3>
+          <p className="font-merriweather-sans text-sm">{cardContent}</p>
+        </div>
+      ))}
     </div>
+  </div>
+  
   )
 }
 
