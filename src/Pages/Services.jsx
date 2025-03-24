@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import TabPanel from "@mui/lab/TabPanel";
 import TabContext from "@mui/lab/TabContext";
 import Cards from "../Components/Tabs/Cards"
+import Banner from "../Components/Tabs/Banner"
 const Services = () => {
   const [value, setValue] = React.useState(0);
 
@@ -53,7 +54,7 @@ const Services = () => {
               aria-label="scrollable force tabs example"
             >
               <Tab label="Business cards" value={0} />
-              <Tab label="Item Two" value={1} />
+              <Tab label="Banner" value={1} />
               <Tab label="Item Three" value={2} />
               <Tab label="Item Four" value={3} />
               <Tab label="Item Five" value={4} />
@@ -66,7 +67,9 @@ const Services = () => {
           <TabPanel value={0}>
            <Cards/>
           </TabPanel>
-          <TabPanel value={1}>Item Two</TabPanel>
+          <TabPanel value={1}>
+          <Banner/>
+            </TabPanel>
           <TabPanel value={2}>Item Three</TabPanel>
           <TabPanel value={3}>Item Four</TabPanel>
           <TabPanel value={4}>Item Five</TabPanel>
