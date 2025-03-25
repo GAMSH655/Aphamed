@@ -57,7 +57,7 @@ const Feedbacks = () => {
       },
       {
         id: 8,
-        name: "Olivia Taylor",
+        name: "everytin fashion",
         rating: 5,
         review: "I had an urgent order for event flyers, and Aphamed Prints delivered right on time! The turnaround was incredibly fast, and the print quality was top-notch. I appreciate the dedication of their team in ensuring my order was processed quickly without compromising quality. Highly recommend them!",
         date: "2024-02-18",
@@ -79,11 +79,8 @@ const Feedbacks = () => {
   ];
 
   return (
-  <div className="mt-[30px] md:mt-[100px]">
-      <h2 className="text-3xl font-bold text-colorPrimary text-center m-3">Hear What Our Customers Say!</h2>
-  <p className="mt-2 text-lg text-gray-600 text-center">
-    At <span className="font-semibold text-blue-600">Aphamed Prints</span>, we take pride in delivering high-quality prints with exceptional service. But don’t just take our word for it—see what our valued customers have to say about their experience with us!
-  </p>
+  <div className="mt-[20px] md:mt-[100px]">
+      <h2 className="text-2xl font-bold text-colorPrimary text-center m-3">Hear What Our Customers Say!</h2>
       <div className="embla  p-6 rounded-lg" ref={emblaRef}>
       <div className="embla__container flex gap-4">
         {reviews.map((review) => (

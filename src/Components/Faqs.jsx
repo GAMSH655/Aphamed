@@ -41,66 +41,6 @@ const faqs = [
           question: "How is pricing determined?",
           answer: "Pricing depends on factors like quantity, paper type, printing method, finishing options, and turnaround time.",
         },
-        {
-          question: "Do you offer discounts for bulk orders?",
-          answer: "Yes, we offer competitive discounts for large-volume orders. Contact us for more details.",
-        },
-        {
-          question: "What payment methods do you accept?",
-          answer: "We accept credit/debit cards, bank transfers, and other payment methods. Please check our payment terms for more information.",
-        },
-        {
-          question: "How long does it take to complete an order?",
-          answer: "Turnaround times vary depending on the project size and complexity. Standard orders typically take 3-5 business days, while rush services are available for quicker delivery.",
-        },
-        {
-          question: "Do you offer rush or express printing services?",
-          answer: "Yes, we offer rush services for urgent orders. Additional fees may apply.",
-        },
-        {
-          question: "Do you provide shipping services?",
-          answer: "Yes, we offer local and international shipping. Shipping costs and delivery times depend on your location.",
-        },
-        {
-          question: "What paper types and finishes do you offer?",
-          answer: "We offer a variety of paper types (e.g., matte, glossy, textured) and finishes (e.g., laminating, UV coating, embossing).",
-        },
-        {
-          question: "Can I print custom sizes or shapes?",
-          answer: "Yes, we specialize in custom printing, including unique sizes, die-cut shapes, and specialty finishes.",
-        },
-        {
-          question: "How do you ensure print quality?",
-          answer: "We use state-of-the-art equipment and perform quality checks at every stage of the printing process.",
-        },
-        {
-          question: "What if I’m not satisfied with my order?",
-          answer: "Customer satisfaction is our priority. If you’re not happy with your order, contact us, and we’ll work to resolve the issue.",
-        },
-        {
-          question: "How can I contact your customer support team?",
-          answer: "You can reach us via phone, email, or live chat during business hours. Visit our Contact Us page for details.",
-        },
-        {
-          question: "What is the difference between RGB and CMYK?",
-          answer: "RGB is used for digital screens, while CMYK is used for printing. For best results, ensure your files are in CMYK format.",
-        },
-        {
-          question: "What is bleed, and why is it important?",
-          answer: "Bleed is the extra area around your design that ensures no white edges appear after trimming. We recommend a 3mm bleed for all print files.",
-        },
-        {
-          question: "What resolution should my images be for printing?",
-          answer: "Images should be at least 300 DPI (dots per inch) for high-quality printing.",
-        },
-        {
-          question: "Do you offer mailing services for printed materials?",
-          answer: "Yes, we provide direct mail services to help you distribute your printed materials efficiently.",
-        },
-        {
-          question: "Can you help with branding and marketing materials?",
-          answer: "Absolutely! We offer branding packages, including business cards, letterheads, and promotional materials, to help you build a cohesive brand identity.",
-        },
 ];
 
 const FAQ = () => {
