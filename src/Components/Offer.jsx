@@ -13,9 +13,9 @@ import Custom from "../assets/Custom.png"
 import Afford from "../assets/Afford.png"
 const Offer = () => {
   const OfferArray = [
-    {OfferImg:Printer , OfferTitle:"Printing services", offerText:"At Aphamed, we bring your ideas to life with top-tier printing solutions. Whether it's marketing materials, packaging, or large-format prints, we guarantee premium quality, sharp details, and vibrant colors. Trust us to make your brand unforgettable!Get in touch today!"
+    {OfferImg:Printer , OfferTitle:"Printing services", offerText:"At Aphamed, we bring your ideas to life with top-tier printing solutions. Whether it's marketing materials, packaging, or large format prints, we guarantee premium quality, sharp details, and vibrant colors. Trust us to make your brand unforgettable!Get in touch today!"
      },
-    {OfferImg:Veg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo—it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience. From logo design and color palettes to complete brand guidelines, we create cohesive and impactful visuals that set you apart."
+    {OfferImg:Veg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience. From logo design and color palettes to complete brand guidelines, we create cohesive and impactful visuals that set you apart."
      },
     {OfferImg:Customer , OfferTitle:"customer feedback", offerText:"At Aphamed, we value every customer's experience and strive for continuous improvement. Your feedback helps us enhance our services, refine our solutions, and better meet your needs. Whether it’s a suggestion, a compliment, or a concern, we’re here to listen and grow with you."
      },
@@ -29,25 +29,19 @@ const Offer = () => {
      },
    
     {
-     sayImg:Transparency , sayHeading:"Transparency" , sayText:"We believe in 100% transparency—no hidden fees, no misleading promises. From pricing to processes, we keep you fully informed every step of the way, ensuring you always know what to expect.."
+     sayImg:Transparency , sayHeading:"Transparency" , sayText:"We believe in 100% transparency no hidden fees, no misleading promises. From pricing to processes, we keep you fully informed every step of the way, ensuring you always know what to expect.."
     },
     {
      sayImg:Trust , sayHeading:"Trust" , sayText:"Our commitment to honesty and excellence has earned us the trust of countless customers. With verified professionals, genuine customer reviews, and a strong track record, you can be confident you’re making the right choice."
     },
     {
-     sayImg:Afford, sayHeading:"affordabillity" , sayText:"Transparent Pricing – No Surprises!We offer competitive rates without compromising on quality. No hidden fees, no unexpected costs—just fair pricing that fits your budget"
-    },
-    {
-     sayImg:Custom, sayHeading:"customization" , sayText:"Every client is unique, and so are their requirements. We provide fully customizable solutions to ensure you get exactly what you need—nothing less, nothing more."
-    },
-    {
-     sayImg:Expert, sayHeading:"expert" , sayText:"With years of hands-on experience, we bring deep expertise and proven success in delivering top-quality services. Our skilled professionals ensure that every project is handled with precision and care."
+     sayImg:Afford, sayHeading:"affordabillity" , sayText:"Transparent Pricing – No Surprises!We offer competitive rates without compromising on quality. No hidden fees, no unexpected costs just fair pricing that fits your budget"
     },
    ]
   return (
     <div className='mt-[100px]'>
       <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> what we offer</h3>
-      <div className="block md:grid md:grid-cols-3">
+      <div className="block md:grid md:grid-cols-2">
         {
           OfferArray.map(({OfferImg , OfferTitle , offerText}, index )=>{
             return <div className="shadow-md rounded-md m-5 p-3" key={index}>
@@ -62,7 +56,7 @@ const Offer = () => {
       </div>
       <div className="mt-[100px]">
       <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> why choose us</h3>
-      <div className="block md:grid md:grid-cols-3">
+      <div className="block md:grid md:grid-cols-4">
       {
           sayArray.map(({sayImg , sayHeading , sayText}, index )=>{
             return <div className="shadow-md rounded-md m-5 p-3">

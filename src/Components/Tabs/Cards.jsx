@@ -80,6 +80,9 @@ const Cards = () => {
                </p>
               </div>
             )}
+            <div className="flex justify-center items-center">
+            <a href="https://api.whatsapp.com/send/?phone=2349091643613&text&type=phone_number&app_absent=0" className='p-2  rounded-mds hover:shadow-md transition-all  w-[180px] text-center border-2  hover:border-black rounded-md'> send a dm</a>
+            </div>
           </div>
         ))}
       </div>

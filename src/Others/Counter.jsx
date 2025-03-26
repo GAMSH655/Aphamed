@@ -56,8 +56,8 @@ const Counter = ({ target }) => {
 
 const CounterSection = () => {
     return (
-        <div className=" bg-gray-100">
-            <div className=" bg-white shadow-lg text-center">
+        <div className=" bg-gray-100 mt-7">
+            <div className=" bg-white  text-center">
                 <h2 className="text-2xl font-semibold">Our Statistics</h2>
                 <div className="flex justify-center space-x-10">
                     <Counter target={500} />
