@@ -7,6 +7,8 @@ import TabPanel from "@mui/lab/TabPanel";
 import TabContext from "@mui/lab/TabContext";
 import Cards from "../Components/Tabs/Cards"
 import Banner from "../Components/Tabs/Banner"
+import weddingcards from "../Components/Tabs/WeddingCards"
+import WeddingCards from "../Components/Tabs/WeddingCards";
 const Services = () => {
   const [value, setValue] = React.useState(0);
 
@@ -55,7 +57,7 @@ const Services = () => {
             >
               <Tab label="Business cards" value={0} />
               <Tab label="Banner" value={1} />
-              <Tab label="Item Three" value={2} />
+              <Tab label="Wedding cards" value={2} />
               <Tab label="Item Four" value={3} />
               <Tab label="Item Five" value={4} />
               <Tab label="Item Six" value={5} />
@@ -70,7 +72,9 @@ const Services = () => {
           <TabPanel value={1}>
           <Banner/>
             </TabPanel>
-          <TabPanel value={2}>Item Three</TabPanel>
+          <TabPanel value={2}>
+            <WeddingCards/>
+          </TabPanel>
           <TabPanel value={3}>Item Four</TabPanel>
           <TabPanel value={4}>Item Five</TabPanel>
           <TabPanel value={5}>Item Six</TabPanel>

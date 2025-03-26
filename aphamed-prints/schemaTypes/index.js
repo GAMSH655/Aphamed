@@ -5,5 +5,5 @@ import card from "./cards"
 import author from './author'
 import cards from './cards'
 import banner from "./banner"
-import weddingcards from './weddingcards'
-export const schemaTypes = [post, author , category, blockContent , cards , banner , weddingcards]
+import wed from './wed'
+export const schemaTypes = [post, author , category, blockContent , cards , banner , wed]

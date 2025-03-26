@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { client } from "../../Client/Client";
 import BlockContent from '@sanity/block-content-to-react';
-const Cards = () => {
+const WeddingCards = () => {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -11,7 +11,7 @@ const Cards = () => {
       try {
         setIsLoading(true);
         const data = await client.fetch(`
-          *[_type == "card"] {
+          *[_type == "wed"] {
             title,
             image {
               asset->{ url },
@@ -21,6 +21,7 @@ const Cards = () => {
           } | order(_createdAt desc)
         `);
         setCards(data);
+        console.log(data)
       } catch (err) {
         console.error("Failed to fetch cards:", err);
         setError(err);
@@ -76,8 +77,8 @@ const Cards = () => {
                 className="font-merriweather-sans text-sm"/>
               </div>
             )}
-            <div className="flex justify-center items-center">
-            <a href="https://api.whatsapp.com/send/?phone=2349091643613&text&type=phone_number&app_absent=0" className='p-2  rounded-mds hover:shadow-md transition-all  w-[180px] text-center border-2  hover:border-black rounded-md'> send a dm</a>
+            <div className="flex justify-center items-center ">
+            <a href="https://api.whatsapp.com/send/?phone=2349091643613&text&type=phone_number&app_absent=0" className='p-2 mt-6  rounded-mds hover:shadow-md transition-all  w-[180px] text-center border-2  hover:border-black rounded-md'> send a dm</a>
             </div>
           </div>
         ))}
@@ -86,4 +87,6 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default WeddingCards;
+
+
