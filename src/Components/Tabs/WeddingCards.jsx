@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { client } from "../../Client/Client";
 import BlockContent from '@sanity/block-content-to-react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 const WeddingCards = () => {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchCards = async () => {
       try {
@@ -13,6 +15,7 @@ const WeddingCards = () => {
         const data = await client.fetch(`
           *[_type == "wed"] {
             title,
+            slug, // ✅ Ensure slug is fetched
             image {
               asset->{ url },
               alt
@@ -21,7 +24,6 @@ const WeddingCards = () => {
           } | order(_createdAt desc)
         `);
         setCards(data);
-        console.log(data)
       } catch (err) {
         console.error("Failed to fetch cards:", err);
         setError(err);
@@ -68,18 +70,15 @@ const WeddingCards = () => {
             <h3 className="text-colorPrimary font-merriweather-sans text-lg font-bold mt-2">
               {card.title}
             </h3>
-            {card.body && (
-              <div className="font-merriweather-sans text-sm mt-2">
-               <BlockContent 
-                blocks={card.body}
-                projectId="your-project-id"
-                dataset="production"
-                className="font-merriweather-sans text-sm"/>
-              </div>
-            )}
-            <div className="flex justify-center items-center ">
-            <a href="https://api.whatsapp.com/send/?phone=2349091643613&text&type=phone_number&app_absent=0" className='p-2 mt-6  rounded-mds hover:shadow-md transition-all  w-[180px] text-center border-2  hover:border-black rounded-md'> send a dm</a>
-            </div>
+          
+            <button
+              aria-label={`Read more about ${card.title}`}
+              type="button"
+              className="flex items-center mt-2 text-blue-600 hover:text-blue-800 transition-all"
+              onClick={() => navigate(`/WedDetails/${card?.slug?.current}`)}
+            >
+              Read more <FaArrowRight className="ml-2 mt-[4px]" />
+            </button>
           </div>
         ))}
       </div>
@@ -88,5 +87,3 @@ const WeddingCards = () => {
 };
 
 export default WeddingCards;
-
-

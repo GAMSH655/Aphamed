@@ -1,32 +1,44 @@
-// In wed.js
-export default {
-  name: 'wed', // Must match your query
-  title: 'Wedding Cards',
-  type: 'document',
+import { defineType, defineField } from "sanity";
+
+export default defineType({
+  name: "wed", // Must match your query
+  title: "Wedding Cards",
+  type: "document",
   fields: [
-    {
-      name: 'title',
-      title: 'Title',
-      type: 'string'
-    },
-    {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
+    defineField({
+      name: "title",
+      title: "Title",
+      type: "string",
+    }),
+    defineField({
+      name: "image",
+      title: "Image",
+      type: "image",
       options: { hotspot: true },
       fields: [
-        {
-          name: 'alt',
-          title: 'Alternative Text',
-          type: 'string'
-        }
-      ]
-    },
-    {
-      name: 'body',
-      title: 'Body Content',
-      type: 'array',
-      of: [{ type: 'block' }]
-    }
-  ]
-}
+        defineField({
+          name: "alt",
+          title: "Alternative Text",
+          type: "string",
+        }),
+      ],
+    }),
+    defineField({
+      name: "body",
+      title: "Body Content",
+      type: "array",
+      of: [{ type: "block" }],
+    }),
+    defineField({
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title", // Auto-generate slug from the "title" field
+        maxLength: 200,  // Limit slug length
+        slugify: (input) =>
+          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
+    }),
+  ],
+});

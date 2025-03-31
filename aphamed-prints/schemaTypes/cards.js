@@ -19,6 +19,16 @@ export default defineType({
       },
     }),
     defineField({
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",  // Auto-generate slug from the "title" field
+        maxLength: 200,   // Limit slug length
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
+    }),    
+    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',

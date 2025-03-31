@@ -1,7 +1,9 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -28,17 +30,18 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
-          <p className="mt-2 text-gray-400">Email: support@aphamed.com</p>
-          <p className="text-gray-400">Phone: +1 234 567 890</p>
+          <p className="mt-2 text-gray-400">Email: Aphamed0@gmain.com</p>
+          <p className="text-gray-400">Phone: +234 909 164 3613</p>
 
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition"><FaFacebook size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition"><FaTwitter size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition"><FaInstagram size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition"><FaLinkedin size={24} /></a>
+            <a href="https://www.facebook.com/share/1Bff6352XN/?mibextid=LQQJ4d" className="text-gray-400 hover:text-colorPrimary transition"><FaFacebook size={24} /></a>
+            <a href="https://x.com/certifiedomoal1?s=21" className="text-gray-400 hover:text-colorPrimary      transition"><FaTwitter size={24} /></a>
+            <a href="https://www.instagram.com/aphamedprints/profilecard" className="text-gray-400 hover:text-colorPrimary transition"><FaInstagram size={24} /></a>
+            <a href="https://www.linkedin.com/in/aphamed-prints-b25a24328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-gray-400 hover:text-colorPrimary transition"><FaLinkedin size={24} /></a>
           </div>
         </div>
+      
       </div>
 
       {/* Copyright Section */}
