@@ -24,6 +24,12 @@ export default defineType({
       ],
     }),
     defineField({
+      name: "about",
+      title: "about",
+      type: "array",
+      of: [{ type: "block" }],
+    }),
+    defineField({
       name: "body",
       title: "Body Content",
       type: "array",

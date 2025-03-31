@@ -20,6 +20,7 @@ const WeddingCards = () => {
               asset->{ url },
               alt
             },
+            about,
             body
           } | order(_createdAt desc)
         `);
@@ -70,7 +71,16 @@ const WeddingCards = () => {
             <h3 className="text-colorPrimary font-merriweather-sans text-lg font-bold mt-2">
               {card.title}
             </h3>
-          
+              {card.body && (
+                         <div className="font-merriweather-sans text-sm mt-2">
+                           <BlockContent
+                             blocks={card.about}
+                             projectId="your-project-id"
+                             dataset="production"
+                             className="font-merriweather-sans text-sm"
+                           />
+                         </div>
+                       )}
             <button
               aria-label={`Read more about ${card.title}`}
               type="button"
