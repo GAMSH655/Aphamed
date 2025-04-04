@@ -69,8 +69,8 @@ const Contact = () => {
               <h3 className="text-lg font-normal capitalize flex items-center text-colorPrimary">
                 <FaEnvelope className="mr-2" /> Email
               </h3>
-              <p className="text-gray-400">devis@example.com</p>
-              <p className="text-gray-400">info@support.com</p>
+              <p className="text-gray-400">Phone: +234 909 164 3613</p>
+              <p className="text-gray-400">Email: Aphamed0@gmail.com</p>
             </div>
             <div>
               <h3 className="text-lg font-normal capitalize flex items-center text-colorPrimary">
