@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <div className="sticky top-0 w-full bg-white shadow-md z-50" id="home">
-            <div className="flex justify-between text-black">
+            <div className="flex justify-between text-black p-4 md:p-2">
                 <img src={Aphamd} alt="Aphamed Logo" className="size-[50px]" />
 
                 {/* Desktop Navigation */}
