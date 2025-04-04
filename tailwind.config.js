@@ -12,7 +12,7 @@ export default {
         'allura': ['Allura', 'cursive'], // Fixed space issue
       },
       textColor:{
-        colorPrimary:'#FF6B6B'
+        colorPrimary:'#00008B'
       }
     },
   },

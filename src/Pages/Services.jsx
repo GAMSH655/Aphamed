@@ -21,7 +21,7 @@ const Services = () => {
       {/* Intro Section */}
       <div className="flex flex-col md:flex-row items-center gap-6 md:p-5 shadow-lg rounded-lg md:m-5">
         <div className="flex-1">
-          <h1 className="text-3xl font-bold mb-4">Welcome to Ahpamed Prints</h1>
+          <h1 className="text-3xl font-bold mb-4 text-colorPrimary">Welcome to Ahpamed Prints</h1>
           <p className="text-lg text-gray-700">
             Whether you're looking to elevate your brand with stunning{" "}
             <strong className="font-semibold">transparent business cards</strong>,

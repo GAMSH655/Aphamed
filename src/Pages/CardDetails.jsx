@@ -21,7 +21,8 @@ const CardDetails = () => {
               asset->{ url },
               alt
             },
-            body
+            body,
+            details
           }
         `, { slug });
 
@@ -79,6 +80,16 @@ const CardDetails = () => {
             <div className="font-merriweather-sans text-sm mt-2">
               <BlockContent
                 blocks={card.body}
+                projectId="your-project-id"
+                dataset="production"
+                className="font-merriweather-sans text-sm"
+              />
+            </div>
+          )}
+          {card.body && (
+            <div className="font-merriweather-sans text-sm mt-2">
+              <BlockContent
+                blocks={card.details}
                 projectId="your-project-id"
                 dataset="production"
                 className="font-merriweather-sans text-sm"
