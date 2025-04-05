@@ -13,13 +13,13 @@ import Custom from "../assets/Custom.png"
 import Afford from "../assets/Afford.png"
 const Offer = () => {
   const OfferArray = [
-    {OfferImg:Printer , OfferTitle:"Printing services", offerText:"At Aphamed, we bring your ideas to life with top-tier printing solutions. Whether it's marketing materials, packaging, or large format prints, we guarantee premium quality, sharp details, and vibrant colors. Trust us to make your brand unforgettable!Get in touch today!"
+    {OfferImg:Printer , OfferTitle:"Printing services", offerText:"At Aphamed, we bring your ideas to life with top-tier printing solutions. Whether it's marketing materials, packaging, or large format prints, we guarantee premium quality, sharp details, and vibrant colors."
      },
-    {OfferImg:Veg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience. From logo design and color palettes to complete brand guidelines, we create cohesive and impactful visuals that set you apart."
+    {OfferImg:Veg , OfferTitle:"brand designing", offerText:"Your brand is more than just a logo it's the face of your business. At Aphamed, we specialize in crafting distinctive brand identities that capture your vision and connect with your audience."
      },
-    {OfferImg:Customer , OfferTitle:"customer feedback", offerText:"At Aphamed, we value every customer's experience and strive for continuous improvement. Your feedback helps us enhance our services, refine our solutions, and better meet your needs. Whether it’s a suggestion, a compliment, or a concern, we’re here to listen and grow with you."
+    {OfferImg:Customer , OfferTitle:"customer feedback", offerText:"At Aphamed, we value every customer's experience and strive for continuous improvement. Your feedback helps us enhance our services, refine our solutions, and better meet your needs"
      },
-    {OfferImg:Enq , OfferTitle:"Printing enquiries", offerText:"Have questions about our printing services? At Aphamed, we’re here to assist you with custom printing solutions, pricing, materials, and design options. Whether you need business cards, brochures, banners, or packaging, we ensure top-quality prints tailored to your requirements."
+    {OfferImg:Enq , OfferTitle:"Printing enquiries", offerText:"At Aphamed, we’re here to assist you with custom printing solutions, pricing, materials, and design options. Whether you need business cards, brochures, banners, or packaging, we ensure top-quality prints tailored to your requirements."
      },
   ]
   

@@ -1,5 +1,5 @@
 import React  , {useEffect}from 'react'
-import Printing from "../assets/Printing.jpg"
+import Printing from "../assets/Aphamedhome.png"
 import { FaLinkedin , FaTwitter , FaFacebook , FaInstagram} from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -42,25 +42,14 @@ const Hero = () => {
   return (
     <div 
     className=' block md:flex md:justify-evenly  text-white hero md:shadow-lg' data-aos="zoom-in"> 
-         <div className="p-5 mt-[10px] md:mt-[100px] text-white ">
-         <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold m-2 md:m-5  capitalize font-allura text-white ">
-             Welcome to aphamed
-             </h3>
-         <h3 className="text-center  text-white md:text-left text-[15px] md:text-lg  font-semibold md:font-bold md:m-5 capitalize font-merriweather-sans">
-           Bringing Your Ideas to Life with High-Quality Printing!
-           </h3>
-           <p  className=' md:break-words leading-loose  text-sm md:text-[16px] font-semibold  md:m-5 mt-[10px] text-center md:text-left font-merriweather-sans'>
-           At  Aphamed, we believe that every print tells a story. Whether you’re looking for business cards, brochures, banners, or custom packaging, we ensure precision, vibrant colors, and premium materials in every project. Our state-of-the-art printing technology guarantees sharp details and long-lasting prints that leave a lasting impression.
-           </p>
-           <div className="flex justify-center md:justify-start mt-[10px] m-5">
-                    {socialMediaLink.map(({ socialLink, socialMediaName, socialMediaIcon }, index) => (
-                        <a key={index} href={socialLink} className=' text-2xl font-semibold m-1 transition-all hover:text-[#FF6B6B] text-center md:text-left'>
-                            {socialMediaIcon}
-                        </a>
-                    ))}
-                </div>
-         </div>
-         <img src={Printing} alt="" className='  md:size-[500px]'  draggable="false" />
+      <img src={Printing} alt="" className="" />
+      {
+        socialMediaLink.map(({socialLink , socialMediaIcon , socialMediaName}, index)=>{
+          return <a href={socialLink} className='text-red-800' key={index}>
+            {socialMediaIcon}
+          </a>
+        })
+      }
     </div>
   )
 }

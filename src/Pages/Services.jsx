@@ -1,5 +1,5 @@
 import React from "react";
-import Color from "../assets/Color.png";
+import Color from "../assets/Aphamedservice.jpg";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
@@ -19,30 +19,13 @@ const Services = () => {
   return (
     <div className="p-5">
       {/* Intro Section */}
-      <div className="flex flex-col md:flex-row items-center gap-6 md:p-5 shadow-lg rounded-lg md:m-5">
-        <div className="flex-1">
-          <h1 className="text-3xl font-bold mb-4 text-colorPrimary">Welcome to Ahpamed Prints</h1>
-          <p className="text-lg text-gray-700">
-            Whether you're looking to elevate your brand with stunning{" "}
-            <strong className="font-semibold">transparent business cards</strong>,
-            create eye-catching marketing materials, or bring your creative visions
-            to life, we’ve got you covered. With state-of-the-art technology,
-            premium materials, and a commitment to quality, Ahpamed Prints
-            delivers exceptional results tailored to your needs. Explore our wide
-            range of printing services and discover how we can help you make a
-            lasting impression. Your vision, our expertise—let’s create something
-            extraordinary together.
-          </p>
-        </div>
-        <div className="flex-1">
+     
           <img
             src={Color}
             alt="Ahpamed Prints Transparent Business Cards"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-1/2 rounded-lg shadow-lg"
           />
-        </div>
-      </div>
-
+    
       {/* Tab Section */}
       <Box  sx={{ maxWidth: "100%", bgcolor: "background.paper"}}>
         <TabContext value={value}>
