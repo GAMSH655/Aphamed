@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   
@@ -20,10 +20,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-2 space-y-2">
-            <li><a href="#" className="hover:text-blue-400 transition">About Us</a></li>
-            <li><a href="#" className="hover:text-blue-400 transition">Services</a></li>
-            <li><a href="#" className="hover:text-blue-400 transition">Pricing</a></li>
-            <li><a href="#" className="hover:text-blue-400 transition">Contact</a></li>
+            <li><NavLink to="/about" className="hover:text-blue-400 transition">About Us</NavLink></li>
+            <li><NavLink to="/services" className="hover:text-blue-400 transition">Services</NavLink></li>
+            <li><a href="https://drive.google.com/drive/folders/1CoAou0NdC5bKnvCPlQTUU1thQ5VqCX4X" className="hover:text-blue-400 transition">Portfolio</a></li>
+            <li><NavLink to="/contact" className="hover:text-blue-400 transition">Contact</NavLink></li>
           </ul>
         </div>
 
@@ -31,8 +31,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
           <p className="mt-2 text-gray-400">Email: Aphamed0@gmail.com</p>
-          <p className="text-gray-400">Phone: +234 909 164 3613</p>
-
+          <p className="text-gray-400">Phone +234 701 397 2790</p>
+          <p className="text-gray-400">WhatsApp: +234 909 164 3613</p>
+          <address className="text-gray-400">09 , olaleye street shomolu lagos state , Nigeria</address>
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
             <a href="https://www.facebook.com/share/1Bff6352XN/?mibextid=LQQJ4d" className="text-gray-400 hover:text-colorPrimary transition"><FaFacebook size={24} /></a>

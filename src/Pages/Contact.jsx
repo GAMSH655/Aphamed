@@ -61,9 +61,6 @@ const Contact = () => {
         {/* Contact Info Section */}
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl font-bold mb-4 text-colorPrimary">Contact Info</h2>
-          <p className="text-gray-400 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-normal capitalize flex items-center text-colorPrimary">
@@ -76,16 +73,14 @@ const Contact = () => {
               <h3 className="text-lg font-normal capitalize flex items-center text-colorPrimary">
                 <FaPhone className="mr-2" /> Phone
               </h3>
-              <p className="text-gray-400">+1 876-369-9009</p>
-              <p className="text-gray-400">+1 213-519-1786</p>
+              <p className="text-gray-400"> +234 701 397 2790</p>
+              <p className="text-gray-400">Phone: +234 909 164 3613</p>
             </div>
             <div>
               <h3 className="text-lg font-normal capitalize flex items-center text-colorPrimary">
                 <FaAddressCard className="mr-2" /> Address
               </h3>
-              <p className="text-gray-400">
-                2661 High Meadow Lane Bear Creek, Olancha, KY 93544
-              </p>
+               <address className="text-gray-400">09 , olaleye street shomolu lagos state , Nigeria</address>
             </div>
           </div>
         </div>

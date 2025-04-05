@@ -23,21 +23,21 @@ const Offer = () => {
      },
   ]
   
-  const sayArray = [
-    {
-      sayImg:Fast, sayHeading:"fast delivery" , sayText:"We prioritize fast turnaround times while maintaining the highest quality standards. Our streamlined processes ensure that your project is delivered on time, every time."
-     },
+  // const sayArray = [
+  //   {
+  //     sayImg:Fast, sayHeading:"fast delivery" , sayText:"We prioritize fast turnaround times while maintaining the highest quality standards. Our streamlined processes ensure that your project is delivered on time, every time."
+  //    },
    
-    {
-     sayImg:Transparency , sayHeading:"Transparency" , sayText:"We believe in 100% transparency no hidden fees, no misleading promises. From pricing to processes, we keep you fully informed every step of the way, ensuring you always know what to expect.."
-    },
-    {
-     sayImg:Trust , sayHeading:"Trust" , sayText:"Our commitment to honesty and excellence has earned us the trust of countless customers. With verified professionals, genuine customer reviews, and a strong track record, you can be confident you’re making the right choice."
-    },
-    {
-     sayImg:Afford, sayHeading:"affordabillity" , sayText:"Transparent Pricing – No Surprises!We offer competitive rates without compromising on quality. No hidden fees, no unexpected costs just fair pricing that fits your budget"
-    },
-   ]
+  //   {
+  //    sayImg:Transparency , sayHeading:"Transparency" , sayText:"We believe in 100% transparency no hidden fees, no misleading promises. From pricing to processes, we keep you fully informed every step of the way, ensuring you always know what to expect.."
+  //   },
+  //   {
+  //    sayImg:Trust , sayHeading:"Trust" , sayText:"Our commitment to honesty and excellence has earned us the trust of countless customers. With verified professionals, genuine customer reviews, and a strong track record, you can be confident you’re making the right choice."
+  //   },
+  //   {
+  //    sayImg:Afford, sayHeading:"affordabillity" , sayText:"Transparent Pricing – No Surprises!We offer competitive rates without compromising on quality. No hidden fees, no unexpected costs just fair pricing that fits your budget"
+  //   },
+  //  ]
   return (
     <div className='mt-[100px]'>
       <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> what we offer</h3>
@@ -54,7 +54,7 @@ const Offer = () => {
           })
         }
       </div>
-      <div className="mt-[100px]">
+      {/* <div className="mt-[100px]">
       <h3 className="text-4xl capitalize text-center text-colorPrimary font-bold"> why choose us</h3>
       <div className="block md:grid md:grid-cols-4">
       {
@@ -69,7 +69,7 @@ const Offer = () => {
           })
         }
       </div>
-      </div>
+      </div> */}
     </div>
   )
 }

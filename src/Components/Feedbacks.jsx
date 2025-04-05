@@ -8,7 +8,7 @@ const Feedbacks = () => {
   const reviews = [
     {
         id: 1,
-        name: "Olasumbo Salami FB",
+        name: "Olasumbo Salami FBT",
         rating: 5,
         review: "Aphamed Prints exceeded my expectations! The print quality was outstanding, and the colors were vibrant and true to the design. The customer support team was incredibly helpful and ensured that my order was processed smoothly. Delivery was quick, and everything arrived in perfect condition. I will definitely be using their services again!",
         date: "2024-03-10",
@@ -22,7 +22,7 @@ const Feedbacks = () => {
       },
       {
         id: 3,
-        name: "Azeez Oladipo INKSNAP",
+        name: "Azeez Oladipo",
         rating: 5,
         review: "Aphamed Prints is by far the best printing company I’ve worked with! The team was professional, the communication was excellent, and the end product was flawless. I placed a large order for business brochures, and they turned out even better than I had imagined. Thank you for your dedication to quality and customer satisfaction!",
         date: "2024-03-05",
@@ -71,7 +71,7 @@ const Feedbacks = () => {
       },
       {
         id: 10,
-        name: "KICHIES DELIGHT",
+        name: "MASRURAT OLORUNTOBILOBA",
         rating: 5,
         review: "Aphamed Prints never disappoints! I’ve ordered multiple times, and every order has been handled professionally. From brochures to posters, everything has been printed with precision and attention to detail. Their customer service is also excellent – responsive and always ready to assist. Definitely my go-to printing company!",
         date: "2024-02-10",

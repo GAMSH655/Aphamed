@@ -41,7 +41,7 @@ const Hero = () => {
      },[])
   return (
     <div 
-    className='  text-white hero ' data-aos="zoom-in"> 
+    className='  text-white '> 
       <img src={Printing} alt="" className="" />
       {
         socialMediaLink.map(({socialLink , socialMediaIcon , socialMediaName}, index)=>{
