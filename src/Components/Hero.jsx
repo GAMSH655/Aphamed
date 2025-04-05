@@ -43,15 +43,15 @@ const Hero = () => {
     <div 
     className='  text-white '> 
       <img src={Printing} alt="" className="" />
-      {
+    <div className="flex justify-center items-center mt-4">
+    {
         socialMediaLink.map(({socialLink , socialMediaIcon , socialMediaName}, index)=>{
-          return <div className="flex justify-center " key={index}>
-            <a href={socialLink} className='text-colorPrimary' >
+          return  <p className='text-[1.2rem] m-[16px]'> <a href={socialLink} className='text-colorPrimary ' key={index} >
             {socialMediaIcon}
-          </a>
-          </div>
+          </a></p>
         })
       }
+    </div>
     </div>
   )
 }

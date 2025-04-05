@@ -1,10 +1,45 @@
 .branding {
-    /* background: linear-gradient(rgba(0, 0, 139, 0.7), rgba(50, 50, 100, 0.7)),
-                url("../assets/Aphamedservice.jpg"); */
-    background-image: url("../assets/Aphamedservice.jpg");
+    background: linear-gradient(rgba(1, 1, 26, 0.466), rgba(0, 0, 0, 0.32)),
+                url("../assets/Coporate.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px;
   }
+  
+  .printingservices {
+    background: linear-gradient(rgba(1, 1, 26, 0.466), rgba(0, 0, 0, 0.32)),
+                url("../assets/Printings.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+  }
+  
+  .giftItems {
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(0, 0, 0, 0.32)),
+                url("../assets/Gift.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+  }
+  
+  .customize_branding {
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(0, 0, 0, 0.32)),
+                url("../assets/Customize.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+  }
+  
+  /* .signage {
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(0, 0, 0, 0.32)),
+                url("../assets/Customize.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+  } */
   
