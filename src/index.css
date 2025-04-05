@@ -8,13 +8,9 @@
     -webkit-text-fill-color: transparent;
   }
   
-  
-.hero{
-    background-image: linear-gradient(#000000a7 , #000000ec) , url("../src/assets/Aphamedhome.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
+  .imghero {
+    max-width: 100%;
+    height: auto;
   }
   .about {
     background-image: linear-gradient(to left, #ff6b6bca, #0b0202d6), 

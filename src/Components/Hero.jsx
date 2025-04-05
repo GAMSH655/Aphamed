@@ -1,5 +1,5 @@
 import React  , {useEffect}from 'react'
-import Printing from "../assets/Aphamedhome.png"
+import Printing from "../assets/Aphamedhome.jpg"
 import { FaLinkedin , FaTwitter , FaFacebook , FaInstagram} from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -41,13 +41,15 @@ const Hero = () => {
      },[])
   return (
     <div 
-    className=' block md:flex md:justify-evenly  text-white hero md:shadow-lg' data-aos="zoom-in"> 
+    className='  text-white hero ' data-aos="zoom-in"> 
       <img src={Printing} alt="" className="" />
       {
         socialMediaLink.map(({socialLink , socialMediaIcon , socialMediaName}, index)=>{
-          return <a href={socialLink} className='text-red-800' key={index}>
+          return <div className="flex justify-center " key={index}>
+            <a href={socialLink} className='text-colorPrimary' >
             {socialMediaIcon}
           </a>
+          </div>
         })
       }
     </div>
