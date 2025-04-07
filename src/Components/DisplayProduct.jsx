@@ -7,10 +7,10 @@ const DisplayProduct = () => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 3000 })]);
 
   const slides = [
-    { id: 1, className: 'branding' , pathLink: "/branding" , pathName:"Branding"},
+    { id: 1, className: 'branding' , pathLink: "/brand" , pathName:"Branding"},
     { id: 2, className: 'printingservices' , pathLink: "/printingservices" , pathName:"Printing services"  },
-    { id: 3, className: 'giftItems' ,  pathLink: "/giftItems" , pathName:" Gift items"  },
-    { id: 4, className: 'customize_branding' , pathLink:"branding" , pathName:"Customize branding"  },
+    { id: 3, className: 'giftItems' ,  pathLink: "/gift" , pathName:" Gift items"  },
+    { id: 4, className: 'customize_branding' , pathLink:"customizebranding" , pathName:"Customize branding"  },
     // { id: 5, className: 'signage' }
   ];
 

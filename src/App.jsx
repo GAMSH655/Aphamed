@@ -10,6 +10,10 @@ import Scroll from './Components/Sroll'
 import useLenis from "./Others/useLenis"
 import CardDetails from "./Pages/CardDetails";
 import WedDetails from "./Pages/WedDetails";
+import Gift from  "./Pages/Gift"
+import Branding from "./Pages/Branding";
+import PrintingServices from "./Pages/PrintingServices"
+import CustomizeBranding from "./Pages/CustomizeBranding"
 const App = () => {
   useLenis()
   return (
@@ -23,6 +27,10 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cardDetails/:slug" element={<CardDetails/>}/>
         <Route path="/WedDetails/:slug" element={<WedDetails/>}/>
+        <Route  path="/gift" element={<Gift/>}/>
+        <Route  path="/brand" element={<Branding/>}/>
+        <Route  path="/printingservices" element={<PrintingServices/>}/>
+        <Route path="/customizebranding" element={<CustomizeBranding/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
