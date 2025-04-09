@@ -6,4 +6,6 @@ import author from './author'
 import cards from './cards'
 import banner from "./banner"
 import wed from './wed'
-export const schemaTypes = [post, author , category, blockContent , cards , banner , wed]
+import printing from "./printing"
+import gift from "./gift"
+export const schemaTypes = [post, author , category, blockContent , cards , banner , wed , printing , gift]

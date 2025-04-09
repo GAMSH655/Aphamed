@@ -14,6 +14,7 @@ import Gift from  "./Pages/Gift"
 import Branding from "./Pages/Branding";
 import PrintingServices from "./Pages/PrintingServices"
 import CustomizeBranding from "./Pages/CustomizeBranding"
+import PrintingDetails from "./Pages/PrintingDetails"
 const App = () => {
   useLenis()
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route  path="/gift" element={<Gift/>}/>
         <Route  path="/brand" element={<Branding/>}/>
         <Route  path="/printingservices" element={<PrintingServices/>}/>
+        <Route  path="/PrintingDetails/:slug" element={<PrintingDetails/>}/>
         <Route path="/customizebranding" element={<CustomizeBranding/>}/>
       </Routes>
       <Footer/>
